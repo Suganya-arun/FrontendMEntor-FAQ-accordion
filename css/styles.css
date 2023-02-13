@@ -1,0 +1,121 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+   padding:7% 15% 7% 15%;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main
+{
+    display:flex;
+    justify-content:space-evenly;
+    border:1px solid transparent;
+    border-radius:2rem;
+    background-color:white;
+    width:100%;  
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
+.answer
+{
+    display: none;
+}
+.answer-show 
+{
+    display:block;
+    font-size:small; 
+}
+h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+.images
+{
+position: relative;
+bottom: 151px;
+right: 199px;
+}
+.box
+{
+    position:relative;
+    right: 133px;
+    bottom: -75px;
+}
+.section-1
+{
+    background-image: url("../images/bg-pattern-desktop.svg");
+    /* background-repeat: no-repeat;*/
+}
+hr{
+    color:hsl(240, 5%, 91%);
+}
+p
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap:3rem;
+}
+.question:hover{
+    color:hsl(14, 88%, 65%);
+}
+.question:active{
+    color:black;
+    font-weight: bold;
+}
+.question-show
+{
+    color:black;
+    font-weight: bold; 
+}
+.arrow-active{
+    transform: rotate(180deg);
+}
+.btn
+{
+   background: none;
+   border:none;
+   padding:0;
+   cursor: pointer;
+}
+@media screen and (max-width:900px)
+{
+   .box{
+    /* content: url("../images/illustration-woman-online-mobile.svg"); */
+    display:none;
+   }
+  .images
+   {
+    content: url("../images/illustration-woman-online-mobile.svg");
+   /* display:none; */
+   bottom: 156px;
+   right: -48px;
+   width: 240px;
+   }
+   .llustration::after
+   {
+    position:absolute;
+   }
+   main{
+        display: grid;
+        background-image: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-origin: border-box; 
+   }
+   body{
+    padding:20% 3% 0 3%;
+   }
+   .section-2
+   {
+    position: relative;
+    top:-9rem;
+    padding:0 1.5rem 0 1.5rem;
+   }
+   h1{
+    text-align: center;
+   }
+}
